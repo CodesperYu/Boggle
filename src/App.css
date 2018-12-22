@@ -1,5 +1,5 @@
 
-
+/* 
 @media screen and (min-device-width:698px) {
   div#BoggleBoard {
     width: 698px;
@@ -7,13 +7,26 @@
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: 200px 200px 200px;
   }
+} */
+
+.Boggle-Board {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 400px;
+  height: 400px;
+  /* grid-template-rows: 20% 20% 20% 20%; */
+}
+
+#word {
+  height: 40px;
 }
 
 .box {
+  position: relative;
   background: #444;
   border: 1px solid #555;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #AAA;
+  font-size: 30px;
+  outline: none;
 }
+
